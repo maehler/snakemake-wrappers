@@ -1,5 +1,22 @@
 # Changelog
 
+### [3.3.7](https://www.github.com/maehler/snakemake-wrappers/compare/v3.3.6...v3.3.7) (2024-02-06)
+
+
+### Performance Improvements
+
+* autobump bio/bbtools ([#2627](https://www.github.com/maehler/snakemake-wrappers/issues/2627)) ([7f5b520](https://www.github.com/maehler/snakemake-wrappers/commit/7f5b5209923401ec20fd1a08063821767300b40a))
+* autobump bio/diamond/blastp ([#2630](https://www.github.com/maehler/snakemake-wrappers/issues/2630)) ([3911776](https://www.github.com/maehler/snakemake-wrappers/commit/39117768d8978f51fade713abf843d970f98c623))
+* autobump bio/diamond/blastx ([#2629](https://www.github.com/maehler/snakemake-wrappers/issues/2629)) ([faf5de8](https://www.github.com/maehler/snakemake-wrappers/commit/faf5de8da5579e97620f668b6f6ac63dc57cc0b4))
+* autobump bio/diamond/makedb ([#2628](https://www.github.com/maehler/snakemake-wrappers/issues/2628)) ([7ddca67](https://www.github.com/maehler/snakemake-wrappers/commit/7ddca679c07cc79598f4099ba0f17d3f10a4247f))
+* autobump bio/fgbio/collectduplexseqmetrics ([#2631](https://www.github.com/maehler/snakemake-wrappers/issues/2631)) ([7a58ee9](https://www.github.com/maehler/snakemake-wrappers/commit/7a58ee99d23d1f75024bf2e12cb82c3e99bdeefc))
+* autobump bio/last/lastal ([#2632](https://www.github.com/maehler/snakemake-wrappers/issues/2632)) ([0090d1a](https://www.github.com/maehler/snakemake-wrappers/commit/0090d1a294c8b56738a9377ce420ebea27fab10c))
+* autobump bio/last/lastdb ([#2633](https://www.github.com/maehler/snakemake-wrappers/issues/2633)) ([0adfac7](https://www.github.com/maehler/snakemake-wrappers/commit/0adfac781ccf609b15bb4301a8597d52504d5049))
+* autobump bio/seqkit ([#2635](https://www.github.com/maehler/snakemake-wrappers/issues/2635)) ([8ed8105](https://www.github.com/maehler/snakemake-wrappers/commit/8ed810512db5c7c76348993317320755d500ebe9))
+* autobump bio/star/align ([#2634](https://www.github.com/maehler/snakemake-wrappers/issues/2634)) ([0cb085a](https://www.github.com/maehler/snakemake-wrappers/commit/0cb085a0fa6fd8466f0305350190464c8256850d))
+* autobump bio/star/index ([#2636](https://www.github.com/maehler/snakemake-wrappers/issues/2636)) ([e8df2fe](https://www.github.com/maehler/snakemake-wrappers/commit/e8df2fe9cab9dc52575f771f170f0bdc0827aae0))
+* autobump bio/whatshap/haplotag ([#2637](https://www.github.com/maehler/snakemake-wrappers/issues/2637)) ([5705ffc](https://www.github.com/maehler/snakemake-wrappers/commit/5705ffc957a8d307c42920608d2a0f1e388a24ce))
+
 ### [3.3.6](https://www.github.com/snakemake/snakemake-wrappers/compare/v3.3.5...v3.3.6) (2024-01-26)
 
 

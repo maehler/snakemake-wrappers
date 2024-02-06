@@ -21,7 +21,7 @@ if ploidy:
 
 filter = snakemake.params.get("filter", "")
 if filter:
-    filter = "--filter {filter}"
+    filter = f"--filter {filter}"
 
 extra = snakemake.params.get("extra", "")
 

@@ -10,3 +10,16 @@ rule cnvkit_call:
         extra = "" # optional
     wrapper:
         "master/bio/cnvkit/call"
+
+rule cnvkit_call_missing_purity:
+    input:
+        segment="test.cns",
+        vcf="test.vcf",
+    output:
+        segment="test.call.missing_purity.cns",
+    params:
+        purity = None,
+    log:
+        "logs/test.call.missing_purity.cns.log",
+    wrapper:
+        "master/bio/cnvkit/call"

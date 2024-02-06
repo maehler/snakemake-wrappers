@@ -7,21 +7,25 @@ from snakemake.shell import shell
 
 log = snakemake.log_fmt_shell(stdout=False, stderr=True)
 
-vcf = snakemake.input.get("vcf", "")
-if vcf:
-    vcf = f"-v {vcf}"
+vcf = ""
+vcf_arg = snakemake.input.get("vcf")
+if vcf_arg:
+    vcf = f"-v {vcf_arg}"
 
-purity = snakemake.params.get("purity", "")
-if purity:
-    purity = f"--purity {purity}"
+purity = ""
+purity_arg = snakemake.params.get("purity")
+if purity_arg:
+    purity = f"--purity {purity_arg}"
 
-ploidy = snakemake.params.get("ploidy", "")
-if ploidy:
-    ploidy = f"--ploidy {ploidy}"
+ploidy = ""
+ploidy_arg = snakemake.params.get("ploidy")
+if ploidy_arg:
+    ploidy = f"--ploidy {ploidy_arg}"
 
-filter = snakemake.params.get("filter", "")
-if filter:
-    filter = f"--filter {filter}"
+filter = ""
+filter_arg = snakemake.params.get("filter")
+if filter_arg:
+    filter = f"--filter {filter_arg}"
 
 extra = snakemake.params.get("extra", "")
 

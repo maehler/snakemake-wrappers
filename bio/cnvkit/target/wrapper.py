@@ -9,9 +9,10 @@ log = snakemake.log_fmt_shell(stdout=False, stderr=True)
 
 extra = snakemake.params.get("extra", "")
 
-annotate = snakemake.input.get("annotate", "")
-if annotate:
-    annotate = f"--annotate {annotate}"
+annotate_arg = snakemake.input.get("annotate", "")
+annotate = ""
+if annotate_arg:
+    annotate = f"--annotate {annotate_arg}"
 
 shell(
     "cnvkit.py target "

@@ -9,9 +9,10 @@ log = snakemake.log_fmt_shell(stdout=False, stderr=True)
 
 extra = snakemake.params.get("extra", "")
 
-accessible = snakemake.input.get("accessible", "")
-if accessible:
-    accessible = f"-g {accessible}"
+accessible_arg = snakemake.input.get("accessible", "")
+accessible = ""
+if accessible_arg:
+    accessible = f"-g {accessible_arg}"
 
 shell(
     "cnvkit.py antitarget "
